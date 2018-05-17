@@ -33,13 +33,13 @@ cd simpsons_tv_script
 sudo python3 -m pip install -r requirements.txt
 ```
 4. Install cudnn:
-   1. Download and untar cudnn version 6 for CUDA 8 (Copied from [RISHAV KUMAR](https://stackoverflow.com/questions/31279494/how-to-install-cudnn-from-command-line):
+   1. Download and untar cudnn version 6 for CUDA 8 (Copied from [RISHAV KUMAR](https://stackoverflow.com/questions/31279494/how-to-install-cudnn-from-command-line)):
    ```
    CUDNN_TAR_FILE="cudnn-8.0-linux-x64-v6.0.tgz"
    wget http://developer.download.nvidia.com/compute/redist/cudnn/v6.0/${CUDNN_TAR_FILE}
    tar -xzvf ${CUDNN_TAR_FILE}
    ```
-   2. Copy the files to appropriate locations and set the correct rights - see also: [NVIDIA](https://docs.nvidia.com/deeplearning/sdk/cudnn-install/#installcuda):
+   2. Copy the files to appropriate locations and set the correct rights - see also [NVIDIA Docs](https://docs.nvidia.com/deeplearning/sdk/cudnn-install/#installcuda):
    ```
    sudo cp -P cuda/include/cudnn.h /usr/local/cuda/include
    sudo cp -P cuda/lib64/libcudnn* /usr/local/cuda/lib64
